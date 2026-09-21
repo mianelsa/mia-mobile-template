@@ -1,5 +1,5 @@
 # DT4 Website Template
- Template for your final project
+ Template for your final project MIA
 
 Kia ora koutou. This repo is a starter template for the final project website template. Follow the steps below to get your own copy set up in VS Code and pushed to your own GitHub account.
  
