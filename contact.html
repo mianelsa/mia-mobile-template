@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- Google Fonts - hamburger menu icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" />
 
     <!-- Flickity Carousel CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -39,7 +39,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>Website Template - Contact me</title>
+    <title>Website Template - Grid Templates</title>
 </head>
 
 <body>
@@ -51,14 +51,13 @@
     
         = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
-        <header>
-            <h1>Website Template</h1>
+  <header>
+            <h1>Travel Diaries</h1>
             <nav class="topnav" id="myTopnav">
+                <a href="grid-template.html">Exploring Aotearoa</a>
+                <a href="about.html">About Me</a>
                 <a href="index.html">Home</a>
-                <a href="grid-template.html">Grid templates</a>
-                <a href="single-item.html">Single item</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="grid-template.html">International Adventures</a>
             </nav>
             <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
                 <span class="material-symbols-outlined" id="menuIcon">menu</span>
@@ -73,10 +72,10 @@
 
         <article class="introduction">
             <h2>
-                My Website - Contact
+                My Website - Grid Template
             </h2>
             <p>
-                Please send your message below.
+                Below, is the Grid Template.
             </p>
             <a href="#" class="readmore-button">
                 Continue reading &hellip;
@@ -85,46 +84,182 @@
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-          CONTACT FORM
+          GRID LAYOUT FOR PORTFOLIO WORK - PORTRAIT FORMAT
     
         = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
-        <form name="contact" method="POST" data-netlify="true" class="contact-form" action="/contact-success.html">
-            <input type="hidden" name="form-name" value="contact">
+        <h2 class="grid-heading">Portrait Grid</h2>
+        <section class="portrait__grid">
 
-            <h3 class="contact-form__heading">Contact me</h3>
-            <p class="contact-form__name">
-                <label>Your Name: </label><br><input type="text" name="name" placeholder="Name" required autofocus />
-            </p>
-            <p class="contact-form__email">
-                <label>Your Email: </label><br><input type="email" name="email" placeholder="Email" required />
-            </p>
-            <p class="contact-form__preference">
-                <label>What do you think of this website: </label><br><select name="prefernce[]"
-                    placeholder="Select from list">
-                    <option value="like">I like it!</option>
-                    <option value="dislike">Hmmm... could do with some work</option>
-                </select>
-            </p>
-            <p class="contact-form__message">
-                <label>Message: </label><br><textarea name="message" rows="7" cols="60"
-                    placeholder="Type your message. . ."></textarea>
-            </p>
-            <p class="contact-form__browser">
-                <label>What browser are you using?</label><br>
-                <input list="browsers" placeholder="Click here to choose from list...">
-                <datalist id="browsers">
-                    <option value="Internet Explorer">
-                    <option value="Firefox">
-                    <option value="Chrome">
-                    <option value="Opera">
-                    <option value="Safari">
-                </datalist>
-            </p>
-            <p class="contact-form__submit">
-                <button type="submit">Send</button>
-            </p>
-        </form>
+            <a href="single-item.html" class="portrait">
+                <img src="images/dune.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Dune</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/fleabag.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Fleabag</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/great-gatsby.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Great Gatsby</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/lord-of-the-flies.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Lord of the Flies</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/night-ocean.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Night Ocean</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/peter-and-the-wolf.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Peter and the Wolf</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/schizoid-man.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">21st Century Schizoid Man</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/teaspoon.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">Teaspoon</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="portrait">
+                <img src="images/the-bell-jar.jpg" alt="Dune" class="portrait__image">
+                <h2 class="portrait__name">The Bell Jar</h2>
+                <p class="portrait__description">Description text goes here.</p>
+            </a>
+
+        </section>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          GRID LAYOUT FOR PORTFOLIO WORK - LANDSCAPE FORMAT
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <h2 class="grid-heading">Landscape Grid</h2>
+        <section class="landscape__grid">
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-001.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-002.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-003.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-004.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-005.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-006.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-007.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-008.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-009.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-010.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-011.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+            <a href="single-item.html" class="landscape">
+                <img src="images/image-012.jpg" alt="landscape image" class="landscape__image">
+                <h2 class="landscape__name">Landscape image</h2>
+                <p class="landscape__description">Description text goes here.</p>
+            </a>
+
+        </section>
+
+        <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+          MASONRY LAYOUT FOR PORTFOLIO WORK - SUITABLE FOR A MIX OF PORTRAIT AND LANDSCAPE FORMAT IMAGES
+    
+        = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
+
+        <h2 class="grid-heading">Masonry Grid</h2>
+        <section class="grid--masonry">
+            <img src="images/dune.jpg" alt="Dune">
+            <img src="images/image-001.jpg" alt="landscape image">
+            <img src="images/image-002.jpg" alt="landscape image">
+            <img src="images/image-003.jpg" alt="landscape image">
+            <img src="images/fleabag.jpg" alt="Dune">
+            <img src="images/image-005.jpg" alt="landscape image">
+            <img src="images/image-008.jpg" alt="landscape image">
+            <img src="images/image-011.jpg" alt="landscape image">
+            <img src="images/image-012.jpg" alt="landscape image">
+            <img src="images/great-gatsby.jpg" alt="Dune">
+            <img src="images/image-007.jpg" alt="landscape image">
+            <img src="images/lord-of-the-flies.jpg" alt="Dune">
+            <img src="images/night-ocean.jpg" alt="Dune">
+            <img src="images/peter-and-the-wolf.jpg" alt="Dune">
+            <img src="images/image-006.jpg" alt="landscape image">
+            <img src="images/image-009.jpg" alt="landscape image">
+            <img src="images/image-010.jpg" alt="landscape image">
+            <img src="images/schizoid-man.jpg" alt="Dune">
+            <img src="images/teaspoon.jpg" alt="Dune">
+            <img src="images/image-004.jpg" alt="landscape image">
+            <img src="images/the-bell-jar.jpg" alt="Dune">
+        </section>
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -209,6 +344,9 @@
     <!-- ***************************************
             J A V A S C R I P T   B E L O W !
          *************************************** -->
+
+    <!-- JavaScript for the MASONRY GRID LAYOUT -->
+    <script src="js/masonry-grid-script.js"></script>
 
    <!-- JavaScript for the MOBILE NAV MENU -->
     <script>

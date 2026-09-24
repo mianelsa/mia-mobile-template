@@ -28,13 +28,14 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 :root {
-    --dark-text: #13381f;
-    --light-text: #fcfcfa;
-    --cream-text: #f6ead0;
-    --medium-dark-text: #055723;
-    --main-background: #F2C230;
-    --header-background: #F2E5A2;
-    --intro-background: #F29F05;
+    --dark-text: #3D1D1C;
+    --light-text: #ffedca;
+    --cream-text: #ffedca;
+    --medium-dark-text: #3D1D1C;
+    --main-background: #ffedca;
+    --header-background: #ffedca;
+    --nav-background: #7f2834;
+    --intro-background: #9db4c4;
     --dark-background: #002F15;
     --portrait-background: #e06c10;
     --landscape-background: #F23A29;
@@ -63,7 +64,7 @@ body {
     font-style: normal;
     color: #1d1d1b;
     font-size: 1.2rem;
-    background-color: #97c8e3;
+    background-color: #ffedca;
 }
 
 img {
