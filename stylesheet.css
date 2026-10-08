@@ -32,13 +32,12 @@
     --light-text: #ffedca;
     --cream-text: #ffedca;
     --medium-dark-text: #3D1D1C;
-    --main-background: #ffedca;
+    --main-background: #3D1D1C;
     --header-background: #ffedca;
-    --nav-background: #7f2834;
     --intro-background: #9db4c4;
     --dark-background: #002F15;
     --portrait-background: #e06c10;
-    --landscape-background: #F23A29;
+    --landscape-background: #f4efee;
     --dark-border-colour: #08331c;
     --button-colour: #402320;
     --dark-green: #13632e;
@@ -57,10 +56,12 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 body {
-    font-family:  'Space Grotesk', sans-serif;
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+   .notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 8000;
+  font-style: normal;
+}
+
     font-style: normal;
     color: #1d1d1b;
     font-size: 1.2rem;
@@ -344,7 +345,7 @@ header {
 @supports (display: grid) {
     .landscape__grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
         gap: 1rem;
         margin: 1rem;
     }
@@ -353,7 +354,7 @@ header {
 /* This 'landscape' class is a container for the text and images */
 .landscape {
     text-align: center;
-    background-color: var(--landscape-background);
+
     border-radius: .4rem;
     padding: 2rem 2rem 1.4rem 2rem;
     transition: box-shadow .3s;
@@ -370,7 +371,8 @@ header {
 
 .landscape__name {
     color: var(--cream-text);
-    font-weight: 400;
+    font-weight: 800rem;
+    font-size: .9rem;
     margin-top: .8rem;
     margin-bottom: .4rem;
 }
@@ -434,6 +436,7 @@ header {
     }
 }
 
+
 @media screen and (max-width: 1000px) {
     .single-item__image {
         max-width: 400px;
@@ -457,11 +460,18 @@ header {
     grid-area: single-item__image;
     width: 100%;
     max-width: 800px;
+    text-align: center;
+    background-color: var(--landscape-background);
+    border-radius: .4rem;
+    padding: 2rem 2rem 7rem 2rem;
+    transition: box-shadow .3s;
+    text-decoration: none;
 }
+
 
 .single-item__h2 {
     grid-area: single-item__h2;
-    color: var(--dark-text);
+    color: var(--light-text);
     font-weight: 400;
     font-size: 2.6rem;
 }
@@ -532,7 +542,7 @@ header {
 }
 
 .next-button:hover {
-    background-color: var(--dark-text);
+    background-color: var(--light-text);
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
