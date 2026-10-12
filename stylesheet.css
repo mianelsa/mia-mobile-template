@@ -421,7 +421,7 @@ header {
       A full-stop '.' means 'create a space' */
 
 @supports (display: grid) {
-    .single-item {
+    .dublinn {
         display: grid;
         gap: 1.5rem;
         grid-auto-columns: 1fr;
@@ -458,7 +458,7 @@ header {
 
 .single-item__image {
     grid-area: single-item__image;
-    width: 100%;
+    width: 80%;
     max-width: 800px;
     text-align: center;
     background-color: var(--landscape-background);
@@ -478,6 +478,7 @@ header {
 
 .single-item__h3 {
     grid-area: single-item__h3;
+    color: var(--light-text);
     font-weight: 300;
     font-size: 2rem;
     line-height: 2.8rem;
@@ -485,8 +486,9 @@ header {
 
 .single-item__introduction {
     grid-area: single-item__introduction;
+    color: var(--light-text);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     max-width: 24rem;
     margin-bottom: .5rem;
 }
@@ -524,7 +526,7 @@ header {
 
 /* This 'Next' button below is unused at the moment. Where might you use this in your web page? */
 .next-button {
-    background-color: var(--dark-text);
+    background-color: var(--light-text);
     width: 40px;
     height: 40px;
     border-radius: 50%;
