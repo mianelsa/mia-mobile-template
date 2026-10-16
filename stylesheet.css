@@ -56,16 +56,17 @@
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 body {
-   .notable-regular {
-  font-family: "Notable", sans-serif;
-  font-weight: 8000;
-  font-style: normal;
-}
-
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     color: #1d1d1b;
     font-size: 1.2rem;
     background-color: #ffedca;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -110,7 +111,7 @@ main {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: relative; /* <-- needed so .icon anchors to the header, not the page */
+    text-align: center; /* <-- needed so .icon anchors to the header, not the page */
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--header-background);
@@ -121,6 +122,7 @@ header {
 header h1 {
     color: var(--dark-text);
     font-weight: 600;
+    font-size: 5rem
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -130,19 +132,22 @@ header h1 {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: relative; /* anchors .icon to the header, not the page */
+    position: center; /* anchors .icon to the header, not the page */
 }
 
 .topnav {
+    background-color:#660000;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    gap: 0.5rem 2rem;
+    justify-content: center;
+    gap: 6rem 7rem;
     width: 100%;
+    padding-bottom: 5rem;
+    
 }
 
 .topnav a {
-    color: #000;
+    color: #ffedca;
     text-decoration: none;
     font-size: 1.15rem;
 }
@@ -187,7 +192,7 @@ header {
     .topnav.responsive {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 0.7rem;
+        gap: 2rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -271,20 +276,45 @@ header {
   
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+.location-page {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.location-page .description {
+    background-color:#9db4c4;
+    padding: 3rem;
+    border-radius: 0 150px 150px 0;
+}
+
+.location-page .description p {
+    color: #402320;
+    font-size: 0.9rem;
+    line-height: 1.5rem;;
+}
+
+.carousel-section {
+    width: 400px;
+    /* height: 400px; */
+    background-color: #fff;
+    padding: 2rem;
+}
+
 .carousel-section .caption {
     background: #FAFAFA;
     margin: 0;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
-    color: #524d49;
+    color: #000;
     font-size: .8rem;
     font-weight: 200;
     font-family: var(--typeface-open-sans);
     font-style: italic;
 }
 
-.carousel-cell {
-    width: 100%;
+.carousel-cell, .carousel-cell img {
+    width: 600px;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -309,7 +339,7 @@ header {
     background-color: var(--portrait-background);
     border-radius: .4rem;
     padding: 2rem 2rem 1.4rem 2rem;
-    transition: box-shadow .3s;
+    
     text-decoration: none;
 }
 
@@ -421,9 +451,9 @@ header {
       A full-stop '.' means 'create a space' */
 
 @supports (display: grid) {
-    .dublinn {
+    .single-item {
         display: grid;
-        gap: 1.5rem;
+        gap: 1rem;
         grid-auto-columns: 1fr;
         grid-template-areas:
             'single-item__image single-item__h2'
@@ -452,7 +482,7 @@ header {
             'single-item__introduction'
             'single-item__block-one'
             'single-item__block-two';
-        margin-left: 1em;
+        margin-left: 3em;
     }
 }
 
@@ -471,22 +501,23 @@ header {
 
 .single-item__h2 {
     grid-area: single-item__h2;
-    color: var(--light-text);
+    color: var(#3D1D1C);
     font-weight: 400;
     font-size: 2.6rem;
+    
 }
 
 .single-item__h3 {
     grid-area: single-item__h3;
     color: var(--light-text);
-    font-weight: 300;
+    font-weight: 200;
     font-size: 2rem;
     line-height: 2.8rem;
 }
 
 .single-item__introduction {
     grid-area: single-item__introduction;
-    color: var(--light-text);
+    color: var(#90d5ff);
     font-weight: 400;
     font-size: 1rem;
     max-width: 24rem;
@@ -517,7 +548,7 @@ header {
 }
 
 .single-item__ul li {
-    padding-left: 1rem;
+    
     background-image: url(images/list-image.svg);
     background-position: 0 .5rem;
     background-size: .7rem .7rem;
@@ -706,7 +737,7 @@ header {
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 footer {
-    background-color: var(--footer-background);
+    background-color: #3D1D1C;
     padding: 2rem;
     color: var(--off-white);
 }
@@ -724,11 +755,11 @@ footer p {
 }
 
 .footer__menu {
-    padding: 2rem;
+    padding: 9rem;
 }
 
 .footer__menu__heading {
-    font-weight: 600;
+    font-weight: 100;
     font-size: 1rem;
 }
 
@@ -746,8 +777,8 @@ ul.footer__menu__list li a:hover {
 }
 
 .footer__copyright-details p {
-    font-size: .8rem;
-    font-weight: 200;
+    font-size: .4rem;
+    font-weight: 50;
     font-style: italic;
 }
 
@@ -758,11 +789,12 @@ ul.footer__menu__list li a:hover {
 /* Max width 1120px or 70rem */
 @media screen and (max-width: 1120px) {
     .footer-grid {
-        grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
+        grid-template-columns: repeat;
     }
 
     .footer__menu {
-        padding: 0;
+        padding: 800px;
+       
     }
 
     footer p {
@@ -773,7 +805,7 @@ ul.footer__menu__list li a:hover {
 @media screen and (max-width: 600px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        margin-bottom: 2rem;
+        margin-bottom: 80rem;
     }
 
     .footer__menu {
@@ -781,7 +813,7 @@ ul.footer__menu__list li a:hover {
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: .5rem;
         margin-bottom: 2rem;
     }
 }
