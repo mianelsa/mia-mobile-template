@@ -63,6 +63,7 @@ body {
     background-color: #ffedca;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Notable", sans-serif;
     font-weight: 400;
@@ -115,14 +116,20 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--header-background);
-    padding: 2rem 0 2rem 2rem;
     min-height: 7rem;
 }
 
 header h1 {
     color: var(--dark-text);
     font-weight: 600;
-    font-size: 5rem
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.blue-area {
+    width: 100%;
+    height: 2rem;
+    background-color: #9db4c4;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -132,7 +139,7 @@ header h1 {
     = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 header {
-    position: center; /* anchors .icon to the header, not the page */
+    position: bottom; /* anchors .icon to the header, not the page */
 }
 
 .topnav {
@@ -142,14 +149,17 @@ header {
     justify-content: center;
     gap: 6rem 7rem;
     width: 100%;
-    padding-bottom: 5rem;
-    
+    align-items: center;
+    height: 100px;
 }
 
 .topnav a {
     color: #ffedca;
     text-decoration: none;
     font-size: 1.15rem;
+    text-align: end;
+    font-style: italic;
+
 }
 
 .topnav a:hover {
@@ -197,7 +207,7 @@ header {
         top: 0;
         right: 0;
         width: 40vw;
-        margin-top: 0;
+        margin-top: 5rem;
         padding: 6rem 2rem 4rem 2rem;
         background-color: beige;
     }
@@ -253,7 +263,7 @@ header {
     text-decoration: none;
     display: inline-block;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
     transition: all .3s;
@@ -299,6 +309,7 @@ header {
     /* height: 400px; */
     background-color: #fff;
     padding: 2rem;
+    margin: 2rem 2rem 0 0;
 }
 
 .carousel-section .caption {
@@ -317,53 +328,6 @@ header {
     width: 600px;
 }
 
-/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-  
-    007.  PORTRAIT LAYOUT - for a grid of portrait format images
-  
-= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
-
-/* This sets the grid layout for the page. */
-@supports (display: grid) {
-    .portrait__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-        gap: 2rem;
-        margin: 2rem;
-    }
-}
-
-/* This 'portrait' class is a container for the text and images */
-.portrait {
-    text-align: center;
-    background-color: var(--portrait-background);
-    border-radius: .4rem;
-    padding: 2rem 2rem 1.4rem 2rem;
-    
-    text-decoration: none;
-}
-
-.portrait:hover {
-    box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
-}
-
-.portrait__image {
-    width: 100%;
-}
-
-.portrait__name {
-    color: var(--cream-text);
-    font-weight: 400;
-    margin-top: .8rem;
-    margin-bottom: .4rem;
-}
-
-.portrait__description {
-    color: var(--cream-text);
-    font-weight: 400;
-    font-size: .7rem;
-    margin-bottom: 1rem;
-}
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
   
@@ -384,7 +348,6 @@ header {
 /* This 'landscape' class is a container for the text and images */
 .landscape {
     text-align: center;
-
     border-radius: .4rem;
     padding: 2rem 2rem 1.4rem 2rem;
     transition: box-shadow .3s;
@@ -743,7 +706,7 @@ footer {
 }
 
 footer p {
-    font-size: .8rem;
+    font-size: .6rem;
 }
 
 @supports (display: grid) {
