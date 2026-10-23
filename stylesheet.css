@@ -168,7 +168,7 @@ header {
     color: #ffedca;
     text-decoration: none;
     font-size: 1.2rem;
-    text-align: end;
+    text-align:top;
     font-style: italic;
 
 }
@@ -192,13 +192,13 @@ header {
     cursor: pointer;
     padding: 0;
     color: #000;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /* First breakpoint */
 @media screen and (max-width: 600px) {
     header {
-        padding: 2rem 0 2rem 1rem;
+        padding: 2rem 0 5rem 1rem;
         min-height: 4rem;
     }
 
@@ -213,19 +213,19 @@ header {
     .topnav.responsive {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1rem;
         position: absolute;
         top: 0;
         right: 0;
         width: 40vw;
-        margin-top: 5rem;
-        padding: 6rem 2rem 4rem 2rem;
-        background-color: beige;
+        margin-top: 1rem;
+        padding: 20rem 2rem 4rem 2rem;
+        background-color: #660000;
     }
 
     .topnav.responsive a {
         display: block;
-        text-align: right;
+        text-align: center;
     }
 }
 
